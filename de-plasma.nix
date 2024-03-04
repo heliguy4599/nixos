@@ -7,23 +7,18 @@
 
   # Packages included only when Plasma is the target desktop
   environment.systemPackages = with pkgs; with pkgs.kdePackages; [
-    merkuro
-    kmail
-    kmail-account-wizard
-    akonadi
     pimcommon
     kdepim-addons
-    kalk
     kcalc
     partitionmanager
-    libappindicator
-    libappindicator-gtk2
-    libappindicator-gtk3
-    kde-rounded-corners
     adw-gtk3
     dragon
     papirus-icon-theme
   ];
+
+  # environment.plasma6.excludePackages = with pkgs; [
+  #   libsForQt5.ksshaskpass
+  # ];
 
   environment.shellAliases = {
     upgrade = "pkexec nixos-rebuild switch --upgrade && ( rm /home/heliguy/.cache/ksycoca6*; kbuildsycoca6; nohup plasmashell --replace >/dev/null 2>&1 & ); echo 'Done!'";
@@ -36,6 +31,4 @@
     libportal-qt5
     libportal
   ];
-
-  security.pam.services.sddm.enableGnomeKeyring = true;
 }

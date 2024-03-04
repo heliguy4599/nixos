@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   imports =
@@ -165,7 +165,22 @@
       remotePlay.openFirewall = true;
     };
     git.enable = true;
+    seahorse.enable = true;
+    ssh.askPassword = lib.mkForce "${pkgs.gnome.seahorse}/libexec/seahorse/ssh-askpass";
   };
+  # <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+  # <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+  # Custom SystemD services list
+  # systemd.user.services = {
+  #   auto_power_profiles = {
+  #     enable = true;
+  #     description = "Heli's service to change power profiles depending on battery state";
+  #     serviceConfig.ExecStart = "%h/.local/bin/auto_power_profiles.sh";
+  #     serviceConfig.User = "heliguy";
+  #     wantedBy = [ "default.target" ];
+  #   };
+  # };
   # <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
   # <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
@@ -218,6 +233,7 @@
     davinci-resolve
     mission-center
     mangohud
+    # inotify-tools
   ];
   # <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
@@ -227,5 +243,5 @@
   virtualisation.containers.enable = true;
   xdg.portal.enable = true;
   nix.gc.automatic = true;
-
+  security.pam.services.login.enableGnomeKeyring = true;
 }
