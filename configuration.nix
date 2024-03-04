@@ -132,6 +132,8 @@
     shellAliases = {
       flt = "flattool";
       installed = "nix-store -q --references /var/run/current-system/sw | cut -d'-' -f2- | grep -i";
+      nixcon = "codium /etc/nixos/";
+      switch = "sudo nixos-rebuild switch";
     };
     sessionVariables = {
       XDG_CONFIG_HOME = "$HOME/.config";

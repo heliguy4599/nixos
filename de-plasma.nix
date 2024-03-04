@@ -26,8 +26,7 @@
   ];
 
   environment.shellAliases = {
-    nixcon = "kwrite /etc/nixos/configuration.nix; pkexec nixos-rebuild switch && ( rm /home/heliguy/.cache/ksycoca6*; kbuildsycoca6; nohup plasmashell --replace & ); echo 'Done!'";
-    upgrade = "pkexec nixos-rebuild switch --upgrade && ( rm /home/heliguy/.cache/ksycoca6*; kbuildsycoca6; nohup plasmashell --replace & ); echo 'Done!'";
+    upgrade = "pkexec nixos-rebuild switch --upgrade && ( rm /home/heliguy/.cache/ksycoca6*; kbuildsycoca6; nohup plasmashell --replace >/dev/null 2>&1 & ); echo 'Done!'";
   };
 
   xdg.portal.extraPortals = with pkgs; [
