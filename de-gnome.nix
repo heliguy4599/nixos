@@ -12,7 +12,6 @@
 
   environment = {
     shellAliases = {
-      nixcon = "xed /etc/nixos/configuration.nix; pkexec nixos-rebuild switch; echo 'Done!'";
       upgrade = "pkexec nixos-rebuild switch --upgrade; echo 'Done!'";
     };
     gnome.excludePackages = with pkgs; with gnome; [

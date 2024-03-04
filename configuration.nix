@@ -165,8 +165,8 @@
       remotePlay.openFirewall = true;
     };
     git.enable = true;
-    seahorse.enable = true;
-    ssh.askPassword = lib.mkForce "${pkgs.gnome.seahorse}/libexec/seahorse/ssh-askpass";
+#    seahorse.enable = true;
+#    ssh.askPassword = lib.mkForce "${pkgs.gnome.seahorse}/libexec/seahorse/ssh-askpass";
   };
   # <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
@@ -233,6 +233,15 @@
     davinci-resolve
     mission-center
     mangohud
+    ninja
+    glib
+    gettext
+    cmake
+    pkg-config
+    blueprint-compiler
+    gtk3
+    gtk4
+    desktop-file-utils
     # inotify-tools
   ];
   # <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
@@ -243,5 +252,4 @@
   virtualisation.containers.enable = true;
   xdg.portal.enable = true;
   nix.gc.automatic = true;
-  security.pam.services.login.enableGnomeKeyring = true;
 }
