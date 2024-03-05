@@ -242,6 +242,9 @@
     gtk4
     desktop-file-utils
     gnome.gnome-boxes
+    gnome-builder
+    gobject-introspection
+    gobject-introspection-unwrapped
     # inotify-tools
   ];
   # <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>

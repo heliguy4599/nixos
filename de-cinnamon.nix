@@ -26,12 +26,12 @@
 
   xdg.portal.config.x-cinnamon = {
     default = [
-      "gnome"
-      "gtk"
       "xapp"
+      "gtk"
+      "gnome"
     ];
     "org.freedesktop.impl.portal.OpenURI" = [
-      "gnome"
+      "xapp"
     ];
   };
 
