@@ -14,6 +14,7 @@
     adw-gtk3
     dragon
     papirus-icon-theme
+    gnome.gnome-calendar
   ];
 
   # environment.plasma6.excludePackages = with pkgs; [

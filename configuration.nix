@@ -9,7 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       # DESKTOP_SWITCHER_SCRIPT_REPLACE_NEXT_LINE
-      /etc/nixos/de-plasma.nix
+      /etc/nixos/de-cinnamon.nix
     ];
 
   networking.hostName = "nixos"; # Define your hostname.
@@ -203,7 +203,7 @@
     supergfxd.enable = true;
     flatpak.enable = true;
     printing.enable = true; # Enable CUPS to print documents.
-    gnome.gnome-keyring.enable = true;
+    # gnome.gnome-keyring.enable = true;
   };
   # <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
@@ -231,7 +231,6 @@
     android-studio
     gnome.dconf-editor
     davinci-resolve
-    mission-center
     mangohud
     ninja
     glib

@@ -6,12 +6,12 @@
   services.xserver.desktopManager.cinnamon.enable = true;
 
   # Packages included only when Cinnamon is the target desktop
-#   environment.systemPackages = with pkgs; [
-#
-#   ];
+  environment.systemPackages = with pkgs; [
+    gnome.gnome-system-monitor
+  ];
 
   environment.shellAliases = {
-    upgrade = "pkexec nixos-rebuild switch --upgrade; echo 'Done!'";
+    upgrade = "pkexec nixos-rebuild switch --upgrade && ( nohup cinnamon --replace >/dev/null 2>&1 & ); echo 'Done!'";
   };
 
   xdg.portal.extraPortals = with pkgs; [
@@ -21,4 +21,6 @@
     libportal-qt5
     libportal
   ];
+
+  services.power-profiles-daemon.enable = true;
 }
