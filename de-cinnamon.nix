@@ -20,12 +20,20 @@
   };
 
   xdg.portal.extraPortals = with pkgs; [
-    xdg-desktop-portal-kde
-    libportal-gtk4
-    libportal-gtk3
-    libportal-qt5
-    libportal
+    # xdg-desktop-portal-kde
+    xdg-desktop-portal-gnome
   ];
+
+  xdg.portal.config.x-cinnamon = {
+    default = [
+      "gnome"
+      "gtk"
+      "xapp"
+    ];
+    "org.freedesktop.impl.portal.OpenURI" = [
+      "gnome"
+    ];
+  };
 
   services.power-profiles-daemon.enable = true;
 }

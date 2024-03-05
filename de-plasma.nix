@@ -27,9 +27,5 @@
 
   xdg.portal.extraPortals = with pkgs; [
     xdg-desktop-portal-gtk
-    libportal-gtk4
-    libportal-gtk3
-    libportal-qt5
-    libportal
   ];
 }

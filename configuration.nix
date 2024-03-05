@@ -241,9 +241,13 @@
     gtk3
     gtk4
     desktop-file-utils
+    gnome.gnome-boxes
     # inotify-tools
   ];
   # <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+  virtualisation.libvirtd.enable = true;
+  programs.dconf.enable = true;
 
   # Misc options
   nixpkgs.config.allowUnfree = true;
