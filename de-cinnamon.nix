@@ -9,6 +9,7 @@
   environment.systemPackages = with pkgs; [
     gnome.gnome-system-monitor
     cinnamon.nemo-with-extensions
+    xdotool
   ];
 
   environment.cinnamon.excludePackages = with pkgs; [
@@ -31,7 +32,7 @@
       "gnome"
     ];
     "org.freedesktop.impl.portal.OpenURI" = [
-      "xapp"
+      "gnome"
     ];
   };
 
