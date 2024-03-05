@@ -8,6 +8,11 @@
   # Packages included only when Cinnamon is the target desktop
   environment.systemPackages = with pkgs; [
     gnome.gnome-system-monitor
+    cinnamon.nemo-with-extensions
+  ];
+
+  environment.cinnamon.excludePackages = with pkgs; [
+    cinnamon.nemo-with-extensions
   ];
 
   environment.shellAliases = {
