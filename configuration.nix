@@ -203,6 +203,7 @@
     supergfxd.enable = true;
     flatpak.enable = true;
     printing.enable = true; # Enable CUPS to print documents.
+    fwupd.enable = true; # Enable Firmware Upgrading
     # gnome.gnome-keyring.enable = true;
   };
   # <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
@@ -246,6 +247,7 @@
     gobject-introspection
     gobject-introspection-unwrapped
     xorg.xeyes
+    gnome-firmware
     # inotify-tools
   ];
   # <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
