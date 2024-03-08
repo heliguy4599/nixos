@@ -10,10 +10,13 @@
     gnome.gnome-system-monitor
     cinnamon.nemo-with-extensions
     xdotool
+    gnome.gnome-software
+    flameshot
   ];
 
   environment.cinnamon.excludePackages = with pkgs; [
-    cinnamon.nemo-with-extensions
+    cinnamon.nemo
+    cinnamon.xviewer
   ];
 
   environment.shellAliases = {

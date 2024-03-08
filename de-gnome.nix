@@ -8,6 +8,8 @@
   # Packages included only when GNOME is the target desktop
   environment.systemPackages = with pkgs; with gnome; [
     gnome-tweaks
+    gnomeExtensions.screenshot-window-sizer
+    gnomeExtensions.rocketbar
   ];
 
   environment = {

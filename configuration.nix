@@ -245,6 +245,7 @@
     gnome-builder
     gobject-introspection
     gobject-introspection-unwrapped
+    xorg.xeyes
     # inotify-tools
   ];
   # <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>

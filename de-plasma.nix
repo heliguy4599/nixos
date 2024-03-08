@@ -15,6 +15,7 @@
     dragon
     papirus-icon-theme
     gnome.gnome-calendar
+    xwaylandvideobridge
   ];
 
   # environment.plasma6.excludePackages = with pkgs; [
