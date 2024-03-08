@@ -160,6 +160,10 @@
         # Add deps for random binaries here
       ];
     };
+    steam = {
+      enable = true;
+      remotePlay.openFirewall = true;
+    };
     git.enable = true;
 #    seahorse.enable = true;
 #    ssh.askPassword = lib.mkForce "${pkgs.gnome.seahorse}/libexec/seahorse/ssh-askpass";
@@ -244,6 +248,7 @@
     gobject-introspection-unwrapped
     xorg.xeyes
     gnome-firmware
+    deja-dup
     # inotify-tools
   ];
   # <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
