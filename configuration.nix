@@ -160,10 +160,6 @@
         # Add deps for random binaries here
       ];
     };
-    steam = {
-      enable = true;
-      remotePlay.openFirewall = true;
-    };
     git.enable = true;
 #    seahorse.enable = true;
 #    ssh.askPassword = lib.mkForce "${pkgs.gnome.seahorse}/libexec/seahorse/ssh-askpass";
