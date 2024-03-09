@@ -28,6 +28,7 @@
       cinnamon.nemo
       cinnamon.xviewer
       gnome.gnome-calculator
+      hexchat
     ];
 
     # Aliases available when Cinnamon is the target desktop
