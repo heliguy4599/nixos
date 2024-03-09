@@ -13,6 +13,8 @@
     # Packages installed when GNOME is the target desktop
     systemPackages = with pkgs; with gnome; with gnomeExtensions; [
       gnome-tweaks
+      gnome-extension-manager
+      adw-gtk3
 
       # GNOME Extensions to add
       screenshot-window-sizer

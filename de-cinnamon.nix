@@ -20,6 +20,7 @@
       gnome.gnome-software
       flameshot
       galculator
+      gnome-text-editor
     ];
 
     # Packages to exclude from the Cinnamon desktop
