@@ -259,12 +259,7 @@
   xdg.portal.enable = true;
   nix.gc.automatic = true;
 
-  hardware = {
-    opengl = {
-      extraPackages = with pkgs; [
-        rocm-opencl-icd
-        rocm-opencl-runtime
-      ];
-    };
-  };
+  hardware.opengl.extraPackages = with pkgs; [
+    rocmPackages.clr.icd
+  ];
 }
