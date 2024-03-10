@@ -15,6 +15,7 @@
       gnome-tweaks
       gnome-extension-manager
       adw-gtk3
+      cinnamon.pix
 
       # GNOME Extensions to add
       screenshot-window-sizer
