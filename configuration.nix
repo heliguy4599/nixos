@@ -9,7 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       # DESKTOP_SWITCHER_SCRIPT_REPLACE_NEXT_LINE
-      /etc/nixos/de-cinnamon.nix
+      /etc/nixos/de-gnome.nix
     ];
 
   networking.hostName = "nixos"; # Define your hostname.
@@ -258,4 +258,13 @@
   virtualisation.containers.enable = true;
   xdg.portal.enable = true;
   nix.gc.automatic = true;
+
+  hardware = {
+    opengl = {
+      extraPackages = with pkgs; [
+        rocm-opencl-icd
+        rocm-opencl-runtime
+      ];
+    };
+  };
 }
