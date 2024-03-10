@@ -245,6 +245,7 @@
     xorg.xeyes
     gnome-firmware
     deja-dup
+    nodePackages_latest.pnpm
     # inotify-tools
   ];
   # <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
