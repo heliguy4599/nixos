@@ -20,6 +20,7 @@
       # GNOME Extensions to add
       screenshot-window-sizer
       rocketbar
+      night-theme-switcher
     ];
 
     # Packages to exclude from the GNOME desktop
@@ -27,6 +28,12 @@
       totem
       gnome-music
       gnome-maps
+      gnome-shell-extensions
+      epiphany
+      gnome-connections
+      loupe
+      gnome-contacts
+      gnome-tour
     ];
 
     # Aliases available when GNOME is the target desktop
