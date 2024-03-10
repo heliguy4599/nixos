@@ -21,6 +21,15 @@
       screenshot-window-sizer
       rocketbar
       night-theme-switcher
+      quick-settings-audio-devices-hider
+      quick-settings-audio-devices-renamer
+      quick-settings-audio-panel
+      user-avatar-in-quick-settings
+      auto-power-profile
+      just-perfection
+      appindicator
+      panel-corners
+      window-gestures
     ];
 
     # Packages to exclude from the GNOME desktop
