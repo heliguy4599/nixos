@@ -139,6 +139,9 @@
       XDG_CONFIG_HOME = "$HOME/.config";
     };
     localBinInPath = true;
+    shellInit = ''
+      export PATH=$PATH:/home/heliguy/.local/bin/flatbins/
+    '';
   };
   # <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
