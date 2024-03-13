@@ -16,6 +16,7 @@
       gnome-extension-manager
       adw-gtk3
       cinnamon.pix
+      celluloid
 
       # GNOME Extensions to add
       screenshot-window-sizer
@@ -53,7 +54,7 @@
 
   nixpkgs.overlays = [
     (final: prev: {
-      gnome = prev.gnome.overrideScope' (gnomeFinal: gnomePrev: {
+      gnome = prev.gnome.overrideScope (gnomeFinal: gnomePrev: {
         mutter = gnomePrev.mutter.overrideAttrs ( old: {
           src = pkgs.fetchgit {
             url = "https://gitlab.gnome.org/vanvugt/mutter.git";
